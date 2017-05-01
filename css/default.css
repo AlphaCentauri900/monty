@@ -1,0 +1,740 @@
+/*
+
+widow and orphan control?
+home page jumps when loading
+dif ads on short article 2?
+
+*/
+
+
+
+body{width:auto;
+overflow-x: scroll;
+    overflow-y: hidden;}
+
+@font-face {
+font-family: caslon;
+src: url('../fonts/bigcaslon.ttf');
+}
+
+
+
+p{color:#424242;}
+
+h2{font-family: "Avenir Next", serif;
+font-weight:600;
+font-size: 60px;
+color:#ff6c08;
+text-align:right;
+padding-left:200px;
+line-height:125%;}
+
+#left{display:inline-block;
+position:absolute;
+height:100vh;
+width:38vw;}
+
+#column-1{display:inline-block;
+	position:absolute;
+	left:39vw;
+height:100vh;
+width:30vw;
+padding-top:30px;}
+
+#column-2{padding-top:30px;
+	display:inline-block;
+	position:absolute;
+left:67.5vw;
+height:100vh;
+width:30vw;}
+
+#column-3{padding-top:30px;
+	display:inline-block;
+	position:absolute;
+left:97.5vw;
+height:100vh;
+width:30vw;
+}
+
+#column-4{padding-top:30px;
+	display:inline-block;
+	position:absolute;
+left:127.5vw;
+height:100vh;
+width:30vw;
+}
+
+#bakery{padding-left:40px;  /*matches paragraph padding*/
+	width:320px;
+	position:relative;
+	bottom:50px;
+} 
+
+#subway{position:relative;
+	left:1vw;
+	top:78vh;
+width:300px;}
+
+#subway2{position:relative;
+	bottom:3vh;
+	left:4vw;
+width:300px;}
+
+.short-title{position:relative;
+	bottom:10vh;
+	font-family: "Avenir Next", serif;
+font-weight:600;
+font-size: 60px;
+color:#ff6c08;
+text-align:right;
+padding-left:200px;
+line-height:125%;
+}
+
+.short-title2{position:relative;
+	bottom:10vh;
+	font-family: "Avenir Next", serif;
+font-weight:600;
+font-size: 60px;
+color:#ff6c08;
+text-align:right;
+padding-left:248px;
+line-height:125%;
+}
+
+
+.byline {text-align:right;
+position:relative;
+font-style:italic;
+bottom:12vh;
+right:1vw;}
+
+
+.short {font-family: "Avenir Next", serif;
+font-size: 13pt;
+padding:40px;}
+
+h4{font-family: "Avenir Next", serif;
+font-weight:400;
+color:#26c121;
+font-size:12pt;}
+
+h3{font-family: "Avenir Next", serif;
+font-weight:400;
+color:#686868;
+font-size:7pt;}
+
+.sponsored{text-align:right;
+position:relative;
+right:.1vw;
+top:.6vh;}
+
+.advertise{text-align:center;
+position:relative;
+bottom:1.1vh;
+}
+
+#bak-ad {bottom:3vh;}
+
+.next-up{position:relative;
+height:150px;
+width:200px;
+left:82vw;
+top:73vh;}
+
+#next-up2{position:relative;
+height:150px;
+width:200px;
+left:140vw;
+top:73vh;}
+
+.box{width:150px;
+	height:150px;
+}
+
+h5{font-family: "Avenir Next", serif;
+font-weight:400;
+font-style:italic;
+color:black;
+font-size:10pt;
+text-align:right;}
+
+h6{font-family: "Avenir Next", serif;
+font-weight:400;
+color:#ff6c08;
+font-size:15pt;
+text-align:right;
+position:relative;
+bottom:5vh;}
+
+#bloop {width:140px;
+position:relative;
+left:1vw;}
+
+.arrow{width:50px;
+height:150px;
+position:relative;
+left:153px;
+bottom:167px;
+}
+
+.arrow-small{position:relative;
+	top:50px;
+height:50px;}
+
+#ar-right{width:0px;
+    height:0px;
+    border-left:25px solid transparent;
+    border-right:25px solid transparent;
+    border-top:25px solid #26c121;
+-ms-transform:rotate(270deg);
+	-webkit-transform:rotate(270deg);
+	transform:rotate(270deg);
+z-index:1;}
+
+	#ar-right2{width:0px;
+    height:0px;
+    border-left:21px solid transparent;
+    border-right:21px solid transparent;
+    border-top:21px solid white;
+-ms-transform:rotate(270deg);
+	-webkit-transform:rotate(270deg);
+	transform:rotate(270deg);
+	position:absolute;
+	bottom:27px;
+	left:2px;
+z-index:2;}
+
+
+
+/*LONG FORM*/
+
+#hero{height:100vh;
+	width:89vw;
+	position:absolute;
+	display:inline-block;
+}
+
+#monty{
+position:absolute;
+bottom:1vh;
+left:-1vw;
+z-index:-1;
+ background-attachment: fixed; 
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 104%;
+      height: 104%;
+      background-image: url('../images/montgomery.png');
+}
+
+
+
+.parallax-window {
+	min-height: 400px;
+	background: transparent;
+}
+
+.long-title{position:relative;
+	top:20vh;
+	z-index:2;
+	padding-left:54vw;
+}
+
+.highlight{
+/*-webkit-animation: slide 12s infinite ease;*/
+}
+
+@-webkit-keyframes slide-a {
+	0% 	{ -webkit-transform: height: 60px; width: 0px;  }
+	100%	{ -webkit-transform: height: 60px; width: 187px; }
+	
+}
+
+#high1{width:187px;
+	height:60px;
+	background-color:#ff6c08;
+z-index:1;
+position:relative;
+bottom:3.5vh;
+left:76.5vw;
+-webkit-animation: slide-a 2s  ease;
+}
+
+@-webkit-keyframes slide-b {
+	0% 	{ -webkit-transform: height: 60px; width: 0px;  }
+	100%	{ -webkit-transform: height: 60px; width: 125px; }
+	
+}
+
+#high2{width:125px;
+height:60px;
+	background-color:#ff6c08;
+z-index:1;
+position:relative;
+bottom:28.7vh;
+left:81vw;
+-webkit-animation: slide-b 2s  ease;}
+
+@-webkit-keyframes slide-c {
+	0% 	{ -webkit-transform: height: 60px; width: 0px;  }
+	100%	{ -webkit-transform: height: 60px; width: 310px; }
+	
+}
+
+#high3{width:310px;
+height:60px;
+	background-color:#ff6c08;
+z-index:1;
+position:relative;
+bottom:27vh;
+left:68vw;
+-webkit-animation: slide-c 2s  ease;}
+
+@-webkit-keyframes slide-d {
+	0% 	{ -webkit-transform: height: 60px; width: 0px;  }
+	100%	{ -webkit-transform: height: 60px; width: 150px; }
+	
+}
+
+#high4{width:150px;
+height:60px;
+	background-color:#ff6c08;
+z-index:1;
+position:relative;
+bottom:16vh;
+left:79vw;
+-webkit-animation: slide-d 2s  ease;}
+
+@-webkit-keyframes slide-e {
+	0% 	{ -webkit-transform: height: 60px; width: 0px;  }
+	100%	{ -webkit-transform: height: 60px; width: 130px; }
+	
+}
+
+#high5{width:130px;
+height:26px;
+	background-color:white;
+z-index:1;
+position:relative;
+bottom:14.5vh;
+left:80.3vw;
+-webkit-animation: slide-e 2s  ease;}
+
+#long-by{position:relative;
+	bottom:20vh;
+	right:0vw;
+z-index:3;}
+
+#date {text-align:center;
+	font-family: "Avenir Next", serif;
+font-weight:500;
+color:#26c121;
+font-size:30pt;
+position:relative;
+top:5vh;
+}
+
+.blurb{text-align:center;
+	font-family: "Avenir Next", serif;
+font-weight:400;
+color:black;
+font-size:10pt;
+padding-left:50px;
+padding-right:50px;
+position:relative;
+
+}
+
+#amend{top:15px;}
+
+#day{position:absolute;
+top:21vh;}
+
+
+#officer {width:300px;
+	position:relative;
+	text-align:center;
+	left:1.5vw;
+	bottom:.2vh;
+}
+
+#schmidt {position:relative;
+	bottom:4.2vh;}
+
+
+.long-text{font-family: "Avenir Next", serif;
+font-size: 13pt;
+padding:15px;
+color::#424242;}
+
+#long-text-brief{font-family: "Avenir Next", serif;
+font-size: 13pt;
+position:relative;
+bottom:5vh;
+:#424242
+}
+
+#css-table {
+  display: table;
+		padding-left:20px;
+		padding-right:20px;
+	display:inline-block;
+	position:absolute;
+left:93vw;
+bottom:9vh;
+width:2000px;
+}
+
+#css-table .col {
+  display: table-cell;
+  width:350px;
+  padding: 10px;
+}
+
+#css-table2 {
+  display: table;
+		padding-left:20px;
+		padding-right:20px;
+	display:inline-block;
+	position:absolute;
+left:165vw;
+bottom:9vh;
+width:1200px;
+}
+
+#css-table2 .col {
+  display: table-cell;
+  width:350px;
+  padding: 10px;
+}
+
+#css-table3 {
+  display: table;
+		padding-left:20px;
+		padding-right:20px;
+	display:inline-block;
+	position:absolute;
+left:270vw;
+bottom:12.5vh;
+width:800px;
+}
+
+#css-table3 .col {
+  display: table-cell;
+  width:350px;
+  padding: 10px;
+}
+
+#smidge{position:relative;
+bottom:-.2vh;}
+
+#monty2{
+position:absolute;
+bottom:0vh;
+left:152vw;
+z-index:-1;
+ background-attachment: fixed; 
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 12%;
+      height: 106%;
+      background-image: url('../images/montgomery.png');
+}
+
+#monty3{
+position:absolute;
+bottom:0vh;
+left:250vw;
+z-index:-1;
+ background-attachment: fixed; 
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 12%;
+      height: 106%;
+      background-image: url('../images/montgomery3.png');
+      
+  
+}
+
+.orange{ 
+background-color:#ff6c08; }
+
+#orange1{position:relative;
+bottom:1vh;
+left:148vw;
+height:100vh;
+width:5vw;}
+
+#orange2{position:absolute;
+bottom:0vh;
+left:250vw;
+height:100vh;
+width:4vw;}
+
+#ending{position:relative;
+	font-size:13pt;
+top:.3vh;}
+
+#line1{height:1px;
+width:240px;
+position:absolute;
+left:195.5vw;
+top:47.5vh;
+background-color:#26c121;
+}
+
+#line2{height:1px;
+width:240px;
+position:absolute;
+left:195.5vw;
+top:54.5vh;
+background-color:#26c121;
+}
+
+#shout{width:260px;
+position:absolute;
+left:195.5vw;
+top:47.3vh;
+}
+
+#shoutout{font-family: "Avenir Next", serif;
+font-weight:400;
+font-size: 23px;
+color:#ff6c08;
+text-align:center;}
+
+
+
+#hamburger{position:fixed;
+z-index:6;}
+
+#hamburger2{position:fixed;
+z-index:6;
+top:10px;}
+
+#square{width:50px;
+height:50px;
+border:#bf550c solid 1px;
+z-index:20;
+}
+
+#bigm{
+position:relative;
+width:50px;}
+
+.display {display:none}
+
+@-webkit-keyframes unfurl {
+	0% 	{ -webkit-transform: width: 170px; height: 0px; }
+	100%	{ -webkit-transform: width: 170px; height: 330px;}
+	
+}
+
+
+#menu{width:170px;
+height:330px;
+background-color:#bf550c;
+position:fixed;
+top:59px;
+z-index:5;
+-webkit-animation:unfurl 1s ease;
+
+}
+
+
+#side-bar{width:170px;
+height:330px;
+position:relative;
+top:1vh;
+padding-left:20px;
+text-align:left;
+	font-family: "Avenir Next", serif;
+font-weight:500;
+color:white;
+font-size:12pt;
+shape-inside: polygon(0 0, 200px 0px, 200px 0px, 0px 0px);
+  shape-padding: 20px;
+  transition: all 1s ease; 
+  -webkit-clip-path: polygon(0 0, 200px 0px, 200px 0px, 0px 0px);
+  z-index:5;
+-webkit-animation:unravel 1s ease;
+-webkit-animation-fill-mode: forwards;
+animation-delay:.2s;
+}
+
+/*#menu:hover #side-bar*/
+@-webkit-keyframes unravel {
+		0% 	{ shape-inside: polygon(0 0, 200px 0px, 200px 320px, 0px 320px); }
+	100%	{  -webkit-clip-path: polygon(0 0, 200px 0px, 200px 320px, 0px 320px);}
+} 
+
+.plain-link{color:white;
+text-decoration:none;}
+
+.plain-link:hover {color:#93d88f;}
+
+#menus{position:relative;
+display:inline-block;
+height:100vh;
+width:18vw;
+}
+
+#title-screen{position:relative;
+display:inline-block;
+height:100vh;
+width:45vw;
+}
+
+#pillar1{position:relative;
+display:inline-block;
+height:100vh;
+width:30vw;
+}
+
+#pillar2{position:absolute;
+display:inline-block;
+left:97vw;
+height:100vh;
+width:30vw;
+}
+
+#sections{text-align:left;
+	font-family: "Avenir Next", serif;
+font-weight:500;
+color:#26c121;
+font-size:12pt;
+position:relative;
+line-height:50px;
+bottom:11vh;
+padding-left:10px;
+}
+
+.section-item{color:#26c121;}
+
+.section-item:hover {color:#1d8717}
+
+#line01{height:1px;
+width:105px;
+position:relative;
+left:7vw;
+bottom: 13vh;
+background-color:#bf550c;
+-webkit-animation: lin-a 2s  ease;
+}
+
+@-webkit-keyframes lin-a {
+	0% 	{ -webkit-transform: height: 1px; width: 0px;  }
+	100%	{ -webkit-transform: height: 1px; width: 105px; }
+	
+}
+
+#line02{height:1px;
+width:176px;
+position:relative;
+left:19vw;
+bottom:13vh;
+background-color:#bf550c;
+-webkit-animation: lin-b 2s  ease;
+}
+
+@-webkit-keyframes lin-b {
+	0% 	{ -webkit-transform: height: 1px; width: 0px;  }
+	100%	{ -webkit-transform: height: 1px; width: 176px; }
+	
+}
+
+
+#line03{height:1px;
+width:280px;
+position:relative;
+left:0vw;
+bottom:3.9vh;
+background-color:#bf550c;
+-webkit-animation: lin-c 2s  ease;
+}
+
+@-webkit-keyframes lin-c {
+	0% 	{ -webkit-transform: height: 1px; width: 0px;  }
+	100%	{ -webkit-transform: height: 1px; width: 280px; }
+	
+}
+
+#line04{height:1px;
+width:50px;
+position:relative;
+left:24vw;
+bottom:3.9vh;
+background-color:#bf550c;
+-webkit-animation: lin-d 2s  ease;
+}
+
+@-webkit-keyframes lin-d {
+	0% 	{ -webkit-transform: height: 1px; width: 0px;  }
+	100%	{ -webkit-transform: height: 1px; width: 50px; }
+	
+}
+
+#title-block{position:absolute;
+top:-58vh;}
+
+#frandsen{width:210px;
+position:relative;
+bottom:3vh;}
+
+#frand-ad{position:relative;
+bottom:3vh;}
+
+#pizza{width:550px;
+	position:relative;
+	bottom:5vh;
+	right:3vw;
+}
+
+.header{font-family: "Avenir Next", serif;
+font-weight:500;
+color:#ff6c08;
+font-size:25pt;
+position:relative;
+top:2vh;}
+
+a{text-decoration:none;
+color:none;}
+
+.text-head{font-family: "Avenir Next", serif;
+font-size: 13pt;
+}
+
+#item2{position:relative;
+bottom:10vh;}
+
+#car{position:relative;
+bottom:5vh;}
+
+#orchard{width:400px;}
+
+#seneca{width:400px;
+position:relative;
+bottom:3vh;}
+
+#eggs{position:relative;
+	left:45%;
+bottom:17vh;}
+
+#item3{position:relative;
+top:4vh;}
+
+#item5{position:relative;
+bottom:12vh;}
+
+#item6{position:relative;
+bottom:17vh}
+
+.opening{margin-top:65px;
+	margin-left:40px;}
+
+.follow {padding-top:0px;}
+
+.video {padding-top:20px;
+padding-bottom:20px;}
+
